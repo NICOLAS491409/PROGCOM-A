@@ -1,0 +1,640 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyP8VwpAwLlvUWsnxweMXKTw",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/NICOLAS491409/PROGCOM-A/blob/main/TRABAJO%20NUMERO%202\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##Listas\n",
+        "Es un tipo de datos\n",
+        "todos los elemtnos de una lista, **deben** separarse por comas\n",
+        "Forma canonica para declarar una lista\n",
+        "\n",
+        "\n",
+        "\n",
+        "```\n",
+        "(variable)=[]\n",
+        "```\n",
+        "Ejemplos:\n",
+        "dahlia=3#variable de tipo numerica, int\n",
+        "rosa=\"cinco\"#variable de tipo alfanumerico, str\n",
+        "flores=[\"amapola\", \"tulipan\", \"lengua de suegra\", dahlia, rosa]\n",
+        "\n",
+        "Manual.\n",
+        "\n",
+        "\n",
+        "\n",
+        "```\n",
+        "Lista2=[dato1,dato2,dato3...,,,dato5]\n",
+        "```\n",
+        "siempre son finitas\n",
+        "son indexadas\n",
+        "\n",
+        "\n",
+        "```\n",
+        "Lista2[dato1,dato2,dato3.-......,dato 5]\n",
+        "```\n",
+        "\n",
+        "Dato 1 esta en el index 0\n",
+        "Dato 2 esta ubicado en el index 1\n",
+        "\n",
+        "--------------------------------------------------------\n",
+        "Estructura **para** para la creacion de listas\n",
+        "\n",
+        "\n",
+        "\n",
+        "```\n",
+        "#Ejemplo: crear una lista de 5 elementos\n",
+        "Lista=[]#para que el programa sepa que es una lista\n",
+        "For lo que sea in range(5):\n",
+        "Lista=input(\"ingrese el nombre de una flor\")\n",
+        "```\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "YKkgMahIzJQh"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 353
+        },
+        "id": "XCxd_52_y9hY",
+        "outputId": "d9702202-6a51-41c2-d630-d5a6a6d78c73"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "ingrese el nombre de una flor: tulipan\n"
+          ]
+        },
+        {
+          "output_type": "error",
+          "ename": "KeyboardInterrupt",
+          "evalue": "Interrupted by user",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mKeyboardInterrupt\u001b[0m                         Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipython-input-290614518.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0mLista\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m[\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0;32mfor\u001b[0m \u001b[0mitem\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mrange\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m5\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 3\u001b[0;31m   \u001b[0mLista\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mappend\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"ingrese el nombre de una flor: \"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/ipykernel/kernelbase.py\u001b[0m in \u001b[0;36mraw_input\u001b[0;34m(self, prompt)\u001b[0m\n\u001b[1;32m   1175\u001b[0m                 \u001b[0;34m\"raw_input was called, but this frontend does not support input requests.\"\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1176\u001b[0m             )\n\u001b[0;32m-> 1177\u001b[0;31m         return self._input_request(\n\u001b[0m\u001b[1;32m   1178\u001b[0m             \u001b[0mstr\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mprompt\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1179\u001b[0m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_parent_ident\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m\"shell\"\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/ipykernel/kernelbase.py\u001b[0m in \u001b[0;36m_input_request\u001b[0;34m(self, prompt, ident, parent, password)\u001b[0m\n\u001b[1;32m   1217\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mKeyboardInterrupt\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1218\u001b[0m                 \u001b[0;31m# re-raise KeyboardInterrupt, to truncate traceback\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 1219\u001b[0;31m                 \u001b[0;32mraise\u001b[0m \u001b[0mKeyboardInterrupt\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Interrupted by user\"\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0;32mNone\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   1220\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mException\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1221\u001b[0m                 \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mlog\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mwarning\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Invalid Message:\"\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mexc_info\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;32mTrue\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mKeyboardInterrupt\u001b[0m: Interrupted by user"
+          ]
+        }
+      ],
+      "source": [
+        "Lista = []\n",
+        "for item in range(5):\n",
+        "  Lista.append(input(\"ingrese el nombre de una flor: \"))"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "type(flores)\n"
+      ],
+      "metadata": {
+        "id": "Sl3Uw21d3R5d"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#quiero saber quien esta en la primera posicion\n",
+        "flores[0]"
+      ],
+      "metadata": {
+        "id": "M32qxNmG4ANN"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "flores[4]"
+      ],
+      "metadata": {
+        "id": "f9g2W6UL4gYE"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "len(flores)"
+      ],
+      "metadata": {
+        "id": "_jp2vwUj4jVX"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "flores[len(flores)-1]"
+      ],
+      "metadata": {
+        "id": "DvmDXy3I4prm"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "flores.index(\"lengua de suegra\")"
+      ],
+      "metadata": {
+        "id": "Rrp0xdn344m8"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1. Escribe un programa que imprima los números del 1 al 10."
+      ],
+      "metadata": {
+        "id": "U_8p2bA3_DoC"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(1, 11):\n",
+        "    print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PdFgOqGj_HnX",
+        "outputId": "5fe89a3f-8ef0-4763-e581-b81d0cd6a739"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "8\n",
+            "9\n",
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n",
+        "for numero in numeros:\n",
+        "    print(numero)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "G0OIOGXs_gby",
+        "outputId": "76373f79-b89e-469f-f4d4-06a27f96b9ec"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "8\n",
+            "9\n",
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2.Escribe un programa que sume los números del 1 al 100.\n"
+      ],
+      "metadata": {
+        "id": "r2ulJ4voA4Jn"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Programa que suma los números del 1 al 100\n",
+        "suma = 0\n",
+        "for i in range(1, 101):  # range(1, 101) genera los números del 1 al 100\n",
+        "    suma += i\n",
+        "print(suma)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bscwiRsTBBIC",
+        "outputId": "b4e1dbf1-5f63-4e8c-c9b6-9f1e60106a6c"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5050\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,\n",
+        "    11, 12, 13, 14, 15, 16, 17, 18, 19, 20,\n",
+        "    21, 22, 23, 24, 25, 26, 27, 28, 29, 30,\n",
+        "    31, 32, 33, 34, 35, 36, 37, 38, 39, 40,\n",
+        "    41, 42, 43, 44, 45, 46, 47, 48, 49, 50,\n",
+        "    51, 52, 53, 54, 55, 56, 57, 58, 59, 60,\n",
+        "    61, 62, 63, 64, 65, 66, 67, 68, 69, 70,\n",
+        "    71, 72, 73, 74, 75, 76, 77, 78, 79, 80,\n",
+        "    81, 82, 83, 84, 85, 86, 87, 88, 89, 90,\n",
+        "    91, 92, 93, 94, 95, 96, 97, 98, 99, 100]\n",
+        "suma = 0\n",
+        "for numero in lista:\n",
+        "    suma += numero\n",
+        "print(suma)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eqJ-lBE0BpLm",
+        "outputId": "9af84676-4a59-497b-d556-50d0e6e35614"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5050\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "3.Escribe un programa que imprima los múltiplos de 3 entre 1 y 30."
+      ],
+      "metadata": {
+        "id": "b1m04pI5C0r3"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for numero in range(3, 31, 3):\n",
+        "    print(numero)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BLobaLq5C_8N",
+        "outputId": "42e1e36f-0304-4af8-ec1e-f8ff09790b32"
+      },
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n",
+            "6\n",
+            "9\n",
+            "12\n",
+            "15\n",
+            "18\n",
+            "21\n",
+            "24\n",
+            "27\n",
+            "30\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "multiplos_de_3 = [3, 6, 9, 12, 15, 18, 21, 24, 27, 30]\n",
+        "for numero in multiplos_de_3:\n",
+        "    print(numero)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0MbdkIVeDZ81",
+        "outputId": "e654645b-67c0-4c33-8e95-db1330d269dd"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n",
+            "6\n",
+            "9\n",
+            "12\n",
+            "15\n",
+            "18\n",
+            "21\n",
+            "24\n",
+            "27\n",
+            "30\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "4 Escribe un programa que lea un número e imprima su tabla de multiplicar del 1 al 10."
+      ],
+      "metadata": {
+        "id": "_kU6qHfEEI01"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numero = int(input())\n",
+        "for i in range(1, 11):\n",
+        "    print(numero, \"x\", i, \"=\", numero * i)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3oxrB84REN3W",
+        "outputId": "0c59278e-4ea6-47f8-aa07-9e7b091b7e17"
+      },
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6\n",
+            "6 x 1 = 6\n",
+            "6 x 2 = 12\n",
+            "6 x 3 = 18\n",
+            "6 x 4 = 24\n",
+            "6 x 5 = 30\n",
+            "6 x 6 = 36\n",
+            "6 x 7 = 42\n",
+            "6 x 8 = 48\n",
+            "6 x 9 = 54\n",
+            "6 x 10 = 60\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n",
+        "for i in lista:\n",
+        "    print(numero, \"x\", i, \"=\", numero * i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "r1nUT-5zEdzk",
+        "outputId": "b140eb2c-377d-4d31-88d1-a90f00e4f676"
+      },
+      "execution_count": 36,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6 x 1 = 6\n",
+            "6 x 2 = 12\n",
+            "6 x 3 = 18\n",
+            "6 x 4 = 24\n",
+            "6 x 5 = 30\n",
+            "6 x 6 = 36\n",
+            "6 x 7 = 42\n",
+            "6 x 8 = 48\n",
+            "6 x 9 = 54\n",
+            "6 x 10 = 60\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "5 Escribe un programa que pida 5 números al usuario y calcule el promedio."
+      ],
+      "metadata": {
+        "id": "N_BVZG4vEt70"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "suma = 0\n",
+        "for i in range(5):\n",
+        "    numero = int(input(\"Ingresa un número entero: \"))\n",
+        "    suma += numero\n",
+        "print(\"El promedio es:\", suma / 5)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SbrSdlunExIr",
+        "outputId": "2f18411b-1f83-4b33-9b6c-4d2fcbf95c4e"
+      },
+      "execution_count": 46,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingresa un número entero: 8\n",
+            "Ingresa un número entero: 8\n",
+            "Ingresa un número entero: 8\n",
+            "Ingresa un número entero: 8\n",
+            "Ingresa un número entero: 8\n",
+            "El promedio es: 8.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numeros = []\n",
+        "for i in range(5):\n",
+        "    numero = int(input(\"Ingresa un número entero: \"))\n",
+        "    numeros.append(numero)\n",
+        "suma = 0\n",
+        "for num in numeros:\n",
+        "    suma += num\n",
+        "print(\"El promedio es:\", suma / 5)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "csyOiUyWFFlz",
+        "outputId": "497ea9fb-f185-48f1-9e13-bdb53374ef4a"
+      },
+      "execution_count": 47,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingresa un número entero: 9\n",
+            "Ingresa un número entero: 5\n",
+            "Ingresa un número entero: 2\n",
+            "Ingresa un número entero: 3\n",
+            "Ingresa un número entero: 4\n",
+            "El promedio es: 4.6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "6 Escribe un programa que cuente cuántos números pares hay entre 1 y un número ingresado."
+      ],
+      "metadata": {
+        "id": "G7fdlDy9F8Vc"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n = int(input(\"Ingresa un número: \"))\n",
+        "contador = 0\n",
+        "for i in range(1, n + 1):\n",
+        "    if i % 2 == 0:\n",
+        "        contador += 1\n",
+        "print(\"Hay\", contador, \"números pares entre 1 y\", n)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "V8Zr8EweF3vD",
+        "outputId": "34a7aee9-5923-4996-b755-c7a804997ebd"
+      },
+      "execution_count": 42,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingresa un número: 8\n",
+            "Hay 4 números pares entre 1 y 8\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n",
+        "contador = 0\n",
+        "for num in numeros:\n",
+        "    if num % 2 == 0:\n",
+        "        contador += 1\n",
+        "print(\"Hay\", contador, \"números pares en la lista.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "msp8ShajGTv6",
+        "outputId": "5b021c63-f43b-47f6-9430-2f4ed2fc7f00"
+      },
+      "execution_count": 52,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hay 5 números pares en la lista.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
