@@ -1,0 +1,68 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMzGhdexPtQXoH1GkPlB0sf",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/NICOLAS491409/PROGCOM-A/blob/main/TRABAJO%20Q4\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##TRABAJO Q4"
+      ],
+      "metadata": {
+        "id": "XDZIidyVo3jT"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Desarrollo de un Juego de Buscaminas con Python\n",
+        "El presente video, presentado por un instructor de programación especializado en Python, se centra en la creación de un juego de Buscaminas, un popular juego para un solo jugador.Pues a lo largo de la serie, el instructor demuestra su amplio conocimiento en programación y diseño de interfaces gráficas, utilizando la biblioteca TK Inter de Python. El objetivo principal de la serie es guiar a los principiantes en la estructuración y desarrollo de proyectos en Python, proporcionando una base sólida y práctica en la programación de juegos. Con un enfoque en la interactividad y el pensamiento lógico, el instructor promueve la participación activa de los aprendices al animarlos a compartir la serie con otros interesados en aprender Python.\n",
+        "## Puntos Clave:\n",
+        "\n",
+        "**Introducción al Proyecto de Buscaminas**  \n",
+        "En esta serie, el instructor introduce el proyecto de desarrollo del juego Buscaminas, explicando la mecánica básica del juego: el objetivo es evitar hacer clic en celdas que contienen minas. Se alentó a los espectadores a tener una comprensión básica de Python antes de comenzar la serie, asegurando que el contenido sea accesible para quienes han tomado cursos introductorios de Python basicos o muy avanzados.\n",
+        "\n",
+        "**Configuración Inicial de Python y TK Inter**  \n",
+        "El instructor enfatiza la importancia de tener Python instalado en la computadora, recomendando la versión 3.8 o superior para el desarrollo del juego. Se utiliza la biblioteca TK Inter para crear la interfaz gráfica, destacando su utilidad en la creación de ventanas y componentes de GUI. La biblioteca permite a los principiantes practicar sin depender de demasiadas bibliotecas externas, facilitando así el aprendizaje.\n",
+        "\n",
+        "**Creación de Elementos de Interfaz**  \n",
+        "A medida que avanza la serie, el instructor explica cómo dividir la ventana del juego en marcos utilizando TK Inter, lo que permite organizar visualmente los diferentes componentes del juego. Se muestran ejemplos de cómo instanciar marcos y cómo configurar sus atributos, como el color de fondo y el tamaño, para mejorar la experiencia visual del usuario.\n",
+        "\n",
+        "**Posicionamiento Dinámico de Elementos**  \n",
+        "El video aborda técnicas para posicionar elementos de manera dinámica en la ventana del juego, utilizando el método `place()` de TK Inter. Se destaca la importancia de establecer correctamente las coordenadas X e Y para que los elementos aparezcan en las ubicaciones deseadas. Este enfoque permite una personalización más efectiva y una mejor organización de los componentes visuales del juego.\n",
+        "\n",
+        "**Uso de Variables y Configuraciones**  \n",
+        "El instructor introduce el concepto de utilizar un archivo separado para almacenar constantes y configuraciones, lo que facilita la gestión del código y evita valores codificados. Este enfoque promueve la reutilización de código y la adaptación a cambios futuros en el proyecto, mostrando buenas prácticas de programación.\n",
+        "\n",
+        "**Desarrollo de Funciones Utilitarias**  \n",
+        "Finalmente, se explica cómo crear un archivo de utilidades para contener funciones que calculen valores porcentuales, como la altura y el ancho de los marcos en relación con el tamaño total de la ventana. Esto no solo mejora la legibilidad del código, sino que también permite una mayor flexibilidad en el diseño del juego, haciendo más sencillo implementar cambios o ajustes."
+      ],
+      "metadata": {
+        "id": "DN3s5cbfo70x"
+      }
+    }
+  ]
+}
